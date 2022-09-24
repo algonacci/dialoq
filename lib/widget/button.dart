@@ -21,7 +21,7 @@ class Button extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(icon),
-            SizedBox(
+            const SizedBox(
               height: 15,
             ),
             Text(text),
