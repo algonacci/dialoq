@@ -15,7 +15,7 @@ class Button extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(15),
       height: 200,
-      width: 200,
+      width: 180,
       child: ElevatedButton(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -24,7 +24,10 @@ class Button extends StatelessWidget {
             const SizedBox(
               height: 15,
             ),
-            Text(text),
+            Text(
+              text,
+              textAlign: TextAlign.center,
+            ),
           ],
         ),
         onPressed: () {},
