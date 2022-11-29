@@ -14,35 +14,25 @@ class HomePage extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Column(
-            children: [
-              const SizedBox(
-                height: 70,
+            children: const [
+              SizedBox(
+                height: 50,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Button(
-                    icon: Icons.chat,
-                    text: "Ngobrol",
-                  ),
-                  Button(
-                    icon: Icons.poll,
-                    text: "Polling",
-                  ),
-                ],
+              Button(
+                text: "Ngobrol",
+                icon: Icons.chat,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Button(
-                    icon: Icons.help,
-                    text: "Pertanyaan",
-                  ),
-                  Button(
-                    icon: Icons.list_alt,
-                    text: "Pilihan Berganda",
-                  ),
-                ],
+              Button(
+                text: "Polling",
+                icon: Icons.poll,
+              ),
+              Button(
+                text: "Pertanyaan",
+                icon: Icons.help,
+              ),
+              Button(
+                text: "Pilihan Berganda",
+                icon: Icons.list_alt,
               ),
             ],
           ),

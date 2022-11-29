@@ -14,8 +14,8 @@ class Button extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(15),
-      height: 200,
-      width: 180,
+      height: 150,
+      width: MediaQuery.of(context).size.width,
       child: ElevatedButton(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
