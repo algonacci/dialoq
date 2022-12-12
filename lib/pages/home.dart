@@ -33,9 +33,14 @@ class HomePage extends StatelessWidget {
                       icon: Icons.poll,
                     ),
                   ),
-                  const Button(
-                    text: "Pertanyaan",
-                    icon: Icons.help,
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/question');
+                    },
+                    child: const Button(
+                      text: "Pertanyaan",
+                      icon: Icons.help,
+                    ),
                   ),
                   const Button(
                     text: "Pilihan Berganda",

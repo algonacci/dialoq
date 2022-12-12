@@ -55,7 +55,6 @@ class _PollingPageState extends State<PollingPage> {
                   hintText: 'Masukkan Pertanyaan',
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(50),
-                    borderSide: BorderSide.none,
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(50),
