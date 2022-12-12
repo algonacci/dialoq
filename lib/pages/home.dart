@@ -12,30 +12,39 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
       ),
       body: SafeArea(
-        child: Center(
-          child: Column(
-            children: const [
-              SizedBox(
-                height: 50,
+        child: ListView(
+          children: [
+            Center(
+              child: Column(
+                children: [
+                  const SizedBox(
+                    height: 50,
+                  ),
+                  const Button(
+                    text: "Ngobrol",
+                    icon: Icons.chat,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/polling');
+                    },
+                    child: const Button(
+                      text: "Polling",
+                      icon: Icons.poll,
+                    ),
+                  ),
+                  const Button(
+                    text: "Pertanyaan",
+                    icon: Icons.help,
+                  ),
+                  const Button(
+                    text: "Pilihan Berganda",
+                    icon: Icons.list_alt,
+                  ),
+                ],
               ),
-              Button(
-                text: "Ngobrol",
-                icon: Icons.chat,
-              ),
-              Button(
-                text: "Polling",
-                icon: Icons.poll,
-              ),
-              Button(
-                text: "Pertanyaan",
-                icon: Icons.help,
-              ),
-              Button(
-                text: "Pilihan Berganda",
-                icon: Icons.list_alt,
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

@@ -1,4 +1,5 @@
 import 'package:dialoq/pages/home.dart';
+import 'package:dialoq/pages/polling.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       home: const HomePage(),
       routes: {
         '/home': (context) => const HomePage(),
+        '/polling': (context) => const PollingPage(),
       },
     );
   }
