@@ -1,3 +1,4 @@
+import 'package:dialoq/pages/chat.dart';
 import 'package:dialoq/pages/home.dart';
 import 'package:dialoq/pages/polling.dart';
 import 'package:dialoq/pages/question.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/home': (context) => const HomePage(),
         '/polling': (context) => const PollingPage(),
         '/question': (context) => const QuestionPage(),
+        '/chat': (context) => const ChatRoomPage(),
       },
     );
   }

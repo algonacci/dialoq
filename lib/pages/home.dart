@@ -20,9 +20,14 @@ class HomePage extends StatelessWidget {
                   const SizedBox(
                     height: 50,
                   ),
-                  const Button(
-                    text: "Ngobrol",
-                    icon: Icons.chat,
+                  InkWell(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/chat');
+                    },
+                    child: const Button(
+                      text: "Ngobrol",
+                      icon: Icons.chat,
+                    ),
                   ),
                   InkWell(
                     onTap: () {
