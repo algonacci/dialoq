@@ -14,3 +14,17 @@ class QuestionProvider extends ChangeNotifier {
   get trueColor => _isTrue ? Colors.green : Colors.grey;
   get falseColor => _isTrue ? Colors.grey : Colors.pink;
 }
+
+class MultipleQuestionProvider extends ChangeNotifier {
+  bool _isSelected = true;
+
+  bool get isSelected => _isSelected;
+
+  set isSelected(bool newValue) {
+    _isSelected = newValue;
+    notifyListeners();
+  }
+
+  get selectedColor => _isSelected ? Colors.green : Colors.grey;
+  get notSelectedColor => _isSelected ? Colors.grey : Colors.green;
+}

@@ -1,5 +1,6 @@
 import 'package:dialoq/pages/chat.dart';
 import 'package:dialoq/pages/home.dart';
+import 'package:dialoq/pages/multiple_question.dart';
 import 'package:dialoq/pages/polling.dart';
 import 'package:dialoq/pages/question.dart';
 import 'package:flutter/material.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/polling': (context) => const PollingPage(),
         '/question': (context) => const QuestionPage(),
         '/chat': (context) => const ChatRoomPage(),
+        '/multiple': (context) => const MultipleQuestionPage(),
       },
     );
   }

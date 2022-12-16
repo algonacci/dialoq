@@ -47,9 +47,15 @@ class HomePage extends StatelessWidget {
                       icon: Icons.help,
                     ),
                   ),
-                  const Button(
-                    text: "Pilihan Berganda",
-                    icon: Icons.list_alt,
+                  InkWell(
+                    onTap: () => Navigator.pushNamed(
+                      context,
+                      '/multiple',
+                    ),
+                    child: const Button(
+                      text: "Pilihan Berganda",
+                      icon: Icons.list_alt,
+                    ),
                   ),
                 ],
               ),
